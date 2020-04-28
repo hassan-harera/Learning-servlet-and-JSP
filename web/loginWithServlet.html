@@ -1,0 +1,38 @@
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body>
+        <form  action="Login" method="Get">
+
+            <div class="simpleFormHeading rsp-gte-tablet">
+                <h1>Log in</h1>
+                <p>Don?t have an account yet? <a href="SignUp.jsp">Sign up</a></p>
+            </div>
+
+            <div class="inputFormBox">
+                <h3 class="simpleFormLabel">Username</h3>
+                <div class="inputFormPadding">
+                    <input type="text" name="username" class="inputForm" required maxlength="40" placeholder="Username" autofocus="autofocus" data-input="CaptchaReload" />
+                </div>
+                <h3 class="simpleFormLabel">Password</h3>
+                <div class="inputFormPadding">
+                    <input type="password" name="password" class="inputForm" required maxlength="20" placeholder="Password" />
+                </div>
+            </div>
+
+            <div class="captcha-container " style="display:none" data-url="/login/captcha"></div>
+
+            <div class="simpleFormItem">
+                <input type="checkbox" name="remember_me" id="rememberMe" value="1" class="checkbox" checked="checked" />
+                <label for="rememberMe">Remember me</label>
+                <a class="util-float-right" href="ForgetPassword.jsp">Forgot password?</a>
+            </div>
+
+            <div class="simpleFormItem">
+                <input type="submit" class="btn-primary-wide" value="Log in">
+            </div>
+
+        </form>
+    </body>
+</html>
+
